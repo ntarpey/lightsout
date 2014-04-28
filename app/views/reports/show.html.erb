@@ -1,0 +1,48 @@
+<img src="http://i.imgur.com/JxyzYCU.png">
+
+<body style="text-align: center !important; width: 60%; margin: 0 auto; margin: auto !important; background-image:url('http://bgwall.net/wp-content/uploads/2014/01/Beautiful-Green-Earth-Closeup-Wallpaper.jpg'); color: white;">
+
+<p id="notice"><%= notice %></p>
+
+<!--<p>
+  <strong>Latitude:</strong>
+  <%= @report.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @report.longitude %>
+</p>-->
+
+<p>
+  <strong>Address:</strong>
+  <%= @report.address %>
+</p>
+
+<p>
+  <strong>Photo URL:</strong>
+  <%= @report.photo %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @report.description %>
+</p>
+
+<p>
+  <strong>Additional Notes:</strong>
+  <%= @report.text %>
+</p>
+
+
+<div style="margin: 10px 0px 0px 0px;">
+<button style="padding:5px; background-color: white; border: 1px solid #666; border-radius:25px;">
+<%= link_to 'Edit', edit_report_path(@report)  %>
+</button>
+</div>
+<div style="margin: 10px 0px 0px 0px;">
+<button style="padding:5px; background-color: white; border: 1px solid #666; border-radius:25px;">
+<%= link_to 'Go Back To The Main Map', reports_path %>
+</button>
+</div>
+
